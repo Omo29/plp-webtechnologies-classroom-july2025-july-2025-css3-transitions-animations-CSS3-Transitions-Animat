@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMORO's Jewelry - Interactive Experience</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+     <h1 style="color: red;">OMORO’s Jewelry Company Ltd</h1>
+     <button class="theme-toggle" id="theme-toggle">🌙 Dark Mode</button>
+     <img src="https://images.pexels.com/photos/258174/pexels-photo-258174.jpeg" alt="Showcase of fine jewelry" height="300" width="1150"/>
+     <p>Your source for handcrafted fine jewelry.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+     <ul>
+         <li><a href="#about">About Us</a></li>
+         <li><a href="#products">Our Products</a></li>
+         <li><a href="#faq">FAQ</a></li>
+         <li><a href="#contact">Contact Info</a></li>
+     </ul>
+  </nav>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <main id="main-content">
+    <section id="about">
+      <h2 style="color: red">About OMORO’s Company</h2>
+      <ul>
+         <li>OMORO’s Company Ltd specializes in handmade gemstone jewelry.</li>
+         <li>We combine traditional craftsmanship with modern designs to create unique rings, necklaces, and earrings.</li>
+         <li>Each piece is ethically sourced and carefully inspected.</li>
+      </ul>
+    </section>
+
+    <section id="products">
+      <h2 style="color: red">Our Products</h2>
+
+      <div class="product">
+        <div>
+          <h3 style="color: darkblue">Gemstone Ring</h3>
+          <img src="https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg" alt="Gold gemstone ring with ruby" height="400" width="800"/>
+        </div>
+        <div>
+          <p>This 14K yellow gold ring features a hand-set oval ruby. Our artisans take care to polish each stone to brilliant sparkle.</p>
+          <ul>
+            <li>Material: 14K yellow gold</li>
+            <li>Gemstone: 8×6 mm natural ruby (VS clarity)</li>
+            <li>Design: Classic four-prong setting with milgrain edge</li>
+            <li>Free eco-friendly gift box included</li>
+          </ul>
+          <div class="product-counter">
+            <span>Interest counter:</span>
+            <button class="counter-btn" data-product="ring" data-action="decrement">-</button>
+            <span class="counter-value" id="ring-counter">0</span>
+            <button class="counter-btn" data-product="ring" data-action="increment">+</button>
+          </div>
+          <button class="price-calculator" data-price="500">Calculate Price</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <div>
+          <h3 style="color: darkblue">Pearl Necklace</h3>
+          <img src="https://images.pexels.com/photos/33222148/pexels-photo-33222148.jpeg" alt="White pearl necklace draped on a bust" height="400" width="800"/>
+        </div>
+        <div>
+          <p>Classic freshwater pearl necklace featuring lustrous white pearls and a sterling silver clasp. Perfect for weddings or gifts.</p>
+          <ul>
+            <li>Pearls: Uniform 8 mm AAA grade pearls</li>
+            <li>Length: 18-inch with adjustable extender</li>
+            <li>Clasp: Sterling silver lobster clasp</li>
+            <li>Packaging: Vegan silk pouch included</li>
+          </ul>
+          <div class="product-counter">
+            <span>Interest counter:</span>
+            <button class="counter-btn" data-product="necklace" data-action="decrement">-</button>
+            <span class="counter-value" id="necklace-counter">0</span>
+            <button class="counter-btn" data-product="necklace" data-action="increment">+</button>
+          </div>
+          <button class="price-calculator" data-price="350">Calculate Price</button>
+        </div>
+      </div>
+
+      <div class="product">
+        <div>
+          <h3 style="color: darkblue">Diamond Earrings</h3>
+          <img src="https://images.pexels.com/photos/28389455/pexels-photo-28389455.jpeg" alt="White gold stud earrings with 0.5 ct round diamonds" height="400" width="800"/>
+        </div>
+        <div>
+          <p>Elegant round-cut 0.50 ct diamond stud earrings in 18K white gold. Ideal for anniversaries or everyday luxury.</p>
+          <ul>
+            <li>Material: 18K white gold (nickel-free)</li>
+            <li>Diamonds: 2 × 0.25 ct, G-H color, VS clarity</li>
+            <li>Setting: Four-prong mount with friction backs</li>
+            <li>Extras: Free jewelry care kit included</li>
+          </ul>
+          <div class="product-counter">
+            <span>Interest counter:</span>
+            <button class="counter-btn" data-product="earrings" data-action="decrement">-</button>
+            <span class="counter-value" id="earrings-counter">0</span>
+            <button class="counter-btn" data-product="earrings" data-action="increment">+</button>
+          </div>
+          <button class="price-calculator" data-price="800">Calculate Price</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2 style="color: red">Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">How do I care for my jewelry? <span>+</span></div>
+        <div class="faq-answer">
+          <p>To keep your jewelry looking its best, we recommend:</p>
+          <ul>
+            <li>Storing pieces separately to prevent scratching</li>
+            <li>Avoiding contact with chemicals, perfumes, and lotions</li>
+            <li>Cleaning with a soft cloth and mild soap if needed</li>
+            <li>Removing jewelry before swimming or showering</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">What is your return policy? <span>+</span></div>
+        <div class="faq-answer">
+          <p>We offer a 30-day return policy on all unworn jewelry in its original condition with tags and packaging. Custom pieces are final sale unless there is a manufacturing defect.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Do you offer custom designs? <span>+</span></div>
+        <div class="faq-answer">
+          <p>Yes! We love creating custom pieces. Please contact us with your ideas, and our designers will work with you to create a unique piece that meets your vision and budget.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Are your gemstones ethically sourced? <span>+</span></div>
+        <div class="faq-answer">
+          <p>Absolutely. We are committed to ethical sourcing and only work with suppliers who adhere to responsible mining practices and fair labor standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <aside id="contact">
+      <h2 style="color: red">Contact Info</h2>
+      <p>Email: <a href="mailto:omoroisaac10@gmail.com">omoroisaac10@gmail.com</a></p>
+      <p>Phone: +254 718089186</p>
+      <div class="animation-control">
+        <h3>Animation Demo</h3>
+        <button id="start-animation">Start Animation</button>
+        <button id="stop-animation">Stop Animation</button>
+      </div>
+    </aside>
+
+    <section id="more-content">
+      <h2 style="color: red">Additional Info & Order Form</h2>
+
+      <h3 style="color: darkblue">Jewelry Comparison</h3>
+      <table>
+        <caption>Jewelry Comparison</caption>
+        <thead>
+          <tr><th>Product</th><th>Material</th><th>Gemstone</th><th>Price (USD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gemstone Ring</td><td>14K Gold</td><td>Ruby (0.5 ct)</td><td>500</td></tr>
+          <tr><td>Pearl Necklace</td><td>Freshwater Pearl</td><td>Pearls (8 mm)</td><td>350</td></tr>
+          <tr><td>Diamond Earrings</td><td>18K White Gold</td><td>Diamonds (0.5 ct tw)</td><td>800</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="color: darkblue">Order Inquiry Form</h3>
+      <form id="order-form" action="#" method="post">
+        <fieldset><legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name" autocomplete="name">
+          <div class="error" id="name-error">Please enter a valid name (at least 2 characters)</div>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+          <div class="error" id="email-error">Please enter a valid email address</div>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required pattern="[+0-9\- ]{7,15}" placeholder="+254 ..." autocomplete="tel">
+          <div class="error" id="phone-error">Please enter a valid phone number</div>
+        </fieldset>
+
+        <fieldset><legend>Order Details</legend>
+          <label for="product">Product of interest:</label>
+          <select id="product" name="product" required>
+             <option value="">Choose one...</option>
+             <option value="ring">Gemstone Ring</option>
+             <option value="necklace">Pearl Necklace</option>
+             <option value="earrings">Diamond Earrings</option>
+          </select>
+          <div class="error" id="product-error">Please select a product</div>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" required min="1" max="10" value="1">
+          <div class="error" id="quantity-error">Please enter a quantity between 1 and 10</div>
+
+          <label for="message">Additional notes:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Custom size, preferences..."></textarea>
+        </fieldset>
+
+        <fieldset><legend>Preferred Contact Method</legend>
+          <label><input type="radio" name="contact_method" value="email" checked> Email</label>
+          <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+        </fieldset>
+
+        <button type="submit">Submit Inquiry</button>
+        <div class="success" id="form-success">Form submitted successfully! We'll contact you shortly.</div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Lightbox for image viewing -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-image" src="" alt="">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 OMORO’s Company Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
